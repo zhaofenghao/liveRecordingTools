@@ -1,8 +1,8 @@
 package redis
 
 import (
-	"ffmpeg_work/config"
 	"github.com/gomodule/redigo/redis"
+	"live_recording_tools/config"
 	"time"
 )
 

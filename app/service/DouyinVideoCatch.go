@@ -2,7 +2,7 @@ package service
 
 import (
 	"encoding/json"
-	"ffmpeg_work/app/utils"
+	"live_recording_tools/app/utils"
 	"log"
 	"net/http"
 	"regexp"

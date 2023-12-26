@@ -1,8 +1,8 @@
 package validator
 
 import (
-	"ffmpeg_work/pkg/e"
 	"github.com/gin-gonic/gin"
+	"live_recording_tools/pkg/e"
 	"log"
 	"time"
 )

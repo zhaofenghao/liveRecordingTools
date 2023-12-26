@@ -1,8 +1,8 @@
 package main
 
 import (
-	"ffmpeg_work/config"
-	"ffmpeg_work/daemon"
+	"live_recording_tools/config"
+	"live_recording_tools/daemon"
 )
 
 func main() {

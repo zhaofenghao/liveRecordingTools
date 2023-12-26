@@ -2,10 +2,10 @@ package controller
 
 import (
 	"context"
-	"ffmpeg_work/app/service"
-	"ffmpeg_work/app/utils"
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"live_recording_tools/app/service"
+	"live_recording_tools/app/utils"
 	"log"
 	"os"
 	"os/exec"
@@ -311,8 +311,8 @@ func TransVideoType(tsPath, mp4Path string) error {
 //	"[1:v]scale=300:-1[overlay_image];",
 //	"[2:v]scale=300:-1[overlay_video];",
 //	"[0:v][overlay_image]overlay=10:H-310[v1];",
-//	"[v1]drawtext=fontcolor=0xFF0000:fontfile=D:/work/ffmpeg_work/font/simfang.ttf:fontsize=94:x=(W-text_w)/2:text='买买买买买！！！':y=(H-text_h)/2,",
-//	"drawtext=fontcolor=#00BFFF:fontfile=D:/work/ffmpeg_work/font/simkai.ttf:fontsize=94:x=(W-text_w)/2:text='抢抢抢！！！':y=(H-text_h)/2-100[v2];",
+//	"[v1]drawtext=fontcolor=0xFF0000:fontfile=D:/work/live_recording_tools/font/simfang.ttf:fontsize=94:x=(W-text_w)/2:text='买买买买买！！！':y=(H-text_h)/2,",
+//	"drawtext=fontcolor=#00BFFF:fontfile=D:/work/live_recording_tools/font/simkai.ttf:fontsize=94:x=(W-text_w)/2:text='抢抢抢！！！':y=(H-text_h)/2-100[v2];",
 //	//"[v2][overlay_video]overlay=W-overlay_w-10:H-overlay_h-10:eof_action=endall[v]",
 //	"[v2][overlay_video]overlay=W-overlay_w-10:H-overlay_h-10[v];",
 //	"[0:a][2:a]amix=inputs=2[aout]",
@@ -339,8 +339,8 @@ func TransVideoType(tsPath, mp4Path string) error {
 //	"[1:v]scale=300:-1[overlay_image];",
 //	"[2:v]scale=300:-1[overlay_video];",
 //	"[0:v][overlay_image]overlay=10:H-310[v1];",
-//	"[v1]drawtext=fontcolor=0xFF0000:fontfile=D:/work/ffmpeg_work/font/simfang.ttf:fontsize=94:x=(W-text_w)/2:text='买买买买买！！！':y=(H-text_h)/2,",
-//	"drawtext=fontcolor=#00BFFF:fontfile=D:/work/ffmpeg_work/font/simkai.ttf:fontsize=94:x=(W-text_w)/2:text='抢抢抢！！！':y=(H-text_h)/2-100[v2];",
+//	"[v1]drawtext=fontcolor=0xFF0000:fontfile=D:/work/live_recording_tools/font/simfang.ttf:fontsize=94:x=(W-text_w)/2:text='买买买买买！！！':y=(H-text_h)/2,",
+//	"drawtext=fontcolor=#00BFFF:fontfile=D:/work/live_recording_tools/font/simkai.ttf:fontsize=94:x=(W-text_w)/2:text='抢抢抢！！！':y=(H-text_h)/2-100[v2];",
 //	"[v2][overlay_video]overlay=W-overlay_w-10:H-overlay_h-10:eof_action=endall[v]",
 //)
 
@@ -369,8 +369,8 @@ func AddEleToVideo() {
 		"[1:v]scale=300:-1[overlay_image];",
 		"[2:v]scale=300:-1[overlay_video];",
 		"[0:v][overlay_image]overlay=10:H-310[v1];",
-		"[v1]drawtext=fontcolor=0xFF0000:fontfile=D:/work/ffmpeg_work/font/simfang.ttf:fontsize=94:x=(W-text_w)/2:text='买买买买买！！！':y=(H-text_h)/2,",
-		"drawtext=fontcolor=#00BFFF:fontfile=D:/work/ffmpeg_work/font/simkai.ttf:fontsize=94:x=(W-text_w)/2:text='抢抢抢！！！':y=(H-text_h)/2-100[v2];",
+		"[v1]drawtext=fontcolor=0xFF0000:fontfile=D:/work/live_recording_tools/font/simfang.ttf:fontsize=94:x=(W-text_w)/2:text='买买买买买！！！':y=(H-text_h)/2,",
+		"drawtext=fontcolor=#00BFFF:fontfile=D:/work/live_recording_tools/font/simkai.ttf:fontsize=94:x=(W-text_w)/2:text='抢抢抢！！！':y=(H-text_h)/2-100[v2];",
 		"[v2][overlay_video]overlay=W-overlay_w-10:H-overlay_h-10:eof_action=endall[v]",
 	)
 
@@ -378,8 +378,8 @@ func AddEleToVideo() {
 	//	"[1:v]scale=300:-1[overlay_image];",
 	//	"[2:v]scale=300:-1[overlay_video];",
 	//	"[0:v][overlay_image]overlay=10:H-310[v1];",
-	//	"[v1]drawtext=fontcolor=0xFF0000:fontfile=D:/work/ffmpeg_work/font/simfang.ttf:fontsize=94:x=(W-text_w)/2:text='买买买买买！！！':y=(H-text_h)/2,",
-	//	"drawtext=fontcolor=#00BFFF:fontfile=D:/work/ffmpeg_work/font/simkai.ttf:fontsize=94:x=(W-text_w)/2:text='抢抢抢！！！':y=(H-text_h)/2-100[v2];",
+	//	"[v1]drawtext=fontcolor=0xFF0000:fontfile=D:/work/live_recording_tools/font/simfang.ttf:fontsize=94:x=(W-text_w)/2:text='买买买买买！！！':y=(H-text_h)/2,",
+	//	"drawtext=fontcolor=#00BFFF:fontfile=D:/work/live_recording_tools/font/simkai.ttf:fontsize=94:x=(W-text_w)/2:text='抢抢抢！！！':y=(H-text_h)/2-100[v2];",
 	//	//"[v2][overlay_video]overlay=W-overlay_w-10:H-overlay_h-10:eof_action=endall[v]",
 	//	"[v2][overlay_video]overlay=W-overlay_w-10:H-overlay_h-10:eof_action=endall[v]",
 	//)
@@ -389,7 +389,7 @@ func AddEleToVideo() {
 	//	"[1:v]scale=300:-1[overlay_image];",
 	//	"[2:v]scale=300:-1[overlay_video];",
 	//	"[0:v][overlay_image]overlay=10:H-310[v1];",
-	//	"[v1]drawtext=fontcolor=0xFF0000:fontfile=D:/work/ffmpeg_work/font/simfang.ttf:fontsize=94:x=(W-text_w)/2:text='买买买买买！！！':y=(H-text_h)/2[v2];",
+	//	"[v1]drawtext=fontcolor=0xFF0000:fontfile=D:/work/live_recording_tools/font/simfang.ttf:fontsize=94:x=(W-text_w)/2:text='买买买买买！！！':y=(H-text_h)/2[v2];",
 	//	"[v2][overlay_video]overlay=W-overlay_w-10:H-overlay_h-10:eof_action=endall[v]",
 	//)
 	var commond = []string{

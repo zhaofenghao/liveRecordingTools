@@ -1,16 +1,13 @@
 package daemon
 
 import (
-	Middlewares "ffmpeg_work/app/middleware"
-	"ffmpeg_work/app/router"
-	"ffmpeg_work/config"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/kardianos/service"
-	_ "github.com/mkevac/debugcharts"
+	Middlewares "live_recording_tools/app/middleware"
+	"live_recording_tools/app/router"
+	"live_recording_tools/config"
 	"log"
-	"net/http"
-	_ "net/http/pprof"
 	"os"
 )
 
@@ -21,9 +18,9 @@ func RunService() {
 	options := make(service.KeyValue)
 	options["LimitNOFILE"] = 1000000
 	svcConfig := &service.Config{
-		Name:        "proxyChecker",
-		DisplayName: "proxyChecker",
-		Description: "proxyChecker",
+		Name:        "liveRecordingTools",
+		DisplayName: "liveRecordingTools",
+		Description: "liveRecordingTools",
 		Option:      options,
 	}
 	prg := &BaseService{}
@@ -148,9 +145,6 @@ func InitRouters() {
 
 	//r.LoadHTMLGlob(appDir + "/app/templates/**/*")
 	//r.Static("/statics", appDir+"/app/templates/statics")
-	go func() {
-		http.ListenAndServe("0.0.0.0:6060", nil)
-	}()
 	r.Run(":" + config.Configs.HttpListenPort)
 }
 

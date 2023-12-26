@@ -1,8 +1,8 @@
 package router
 
 import (
-	"ffmpeg_work/app/controller"
 	"github.com/gin-gonic/gin"
+	"live_recording_tools/app/controller"
 )
 
 func InitAllRouter(r *gin.Engine) {

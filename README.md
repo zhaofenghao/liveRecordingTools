@@ -5,7 +5,7 @@
 ### 如何使用
 
 ```
-go mod init ffmpeg_work
+go mod init live_recording_tools
 go mod tidy
 go run main.go
 ```

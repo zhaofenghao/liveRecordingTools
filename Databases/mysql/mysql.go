@@ -1,10 +1,10 @@
 package mysql
 
 import (
-	"ffmpeg_work/config"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
+	"live_recording_tools/config"
 )
 
 var DB, DBLong, DBArticle, DBUseLog, DBLog, DBProxy *gorm.DB

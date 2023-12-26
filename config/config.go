@@ -1,8 +1,8 @@
 package config
 
 import (
-	"ffmpeg_work/app/utils"
 	"github.com/go-ini/ini"
+	"live_recording_tools/app/utils"
 	"runtime"
 )
 
