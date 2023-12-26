@@ -18,5 +18,4 @@ go run main.go
 http://localhost:8075/run
 ```
 
-## 参考项目
-* https://github.com/ihmily/DouyinLiveRecorder
+
